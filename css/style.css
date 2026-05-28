@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@500;700&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Open Sans',sans-serif;
+background-color:#FCF8F8;
+color:#36454F;
+line-height:1.7;
+font-size:1rem;
+}
+
+/* Header */
+
+header{
+background-image:url("../images/pizza-banner.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+padding:4rem 2rem;
+text-align:center;
+position:relative;
+color:white;
+}
+
+header::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.55);
+}
+
+header h1,
+header p,
+nav,
+header .btn{
+position:relative;
+z-index:1;
+}
+
+header h1{
+color:white;
+font-size:3rem;
+margin-bottom:1rem;
+}
+
+/* Typography */
+
+h1,h2,h3{
+font-family:'Roboto',sans-serif;
+margin-bottom:1rem;
+color:#CE2626;
+}
+
+p{
+margin-bottom:1rem;
+}
+
+/* Navigation */
+
+nav{
+margin-top:1rem;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:1rem;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:700;
+padding:0.7rem 1rem;
+border-radius:8px;
+}
+
+nav a:hover{
+background:#48A111;
+}
+
+/* Main */
+
+main{
+width:90%;
+max-width:1200px;
+margin:auto;
+padding:2rem 0;
+}
+
+/* Sections */
+
+section{
+background:white;
+padding:2rem;
+margin-bottom:1.5rem;
+border-radius:15px;
+border-left:5px solid #CE2626;
+box-shadow:0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* Images */
+
+img{
+max-width:100%;
+height:auto;
+border-radius:15px;
+}
+
+/* Cards */
+
+.card-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:1.5rem;
+margin-top:1.5rem;
+}
+
+.card{
+background:#FCF8F8;
+padding:1.5rem;
+border-radius:15px;
+box-shadow:0 4px 10px rgba(0,0,0,0.10);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+margin-bottom:1rem;
+}
+
+/* Buttons */
+
+button,
+.btn{
+background:#CE2626;
+color:white;
+padding:0.8rem 1.2rem;
+border-radius:10px;
+text-decoration:none;
+display:inline-block;
+margin-top:0.7rem;
+font-weight:700;
+border:none;
+cursor:pointer;
+}
+
+button:hover,
+.btn:hover{
+background:#48A111;
+}
+
+.btn-green{
+background:#48A111;
+}
+
+.btn-green:hover{
+background:#CE2626;
+}
+
+/* Safety box */
+
+.safety-box{
+background:#fff7d6;
+border-left:6px solid #ffc107;
+}
+
+/* Forms */
+
+form{
+display:flex;
+flex-direction:column;
+gap:1rem;
+}
+
+input,
+textarea{
+padding:0.9rem;
+border:1px solid #ccc;
+border-radius:8px;
+font-family:'Open Sans',sans-serif;
+}
+
+/* Footer */
+
+footer{
+background:#36454F;
+color:white;
+text-align:center;
+padding:1.5rem;
+margin-top:2rem;
+}
+
+/* Tablet */
+
+@media screen and (max-width:768px){
+
+nav{
+flex-direction:column;
+align-items:center;
+}
+
+nav a{
+width:100%;
+text-align:center;
+}
+
+header h1{
+font-size:2rem;
+}
+
+}
+
+/* Mobile */
+
+@media screen and (max-width:480px){
+
+body{
+font-size:0.95rem;
+}
+
+header{
+padding:2rem 1rem;
+}
+
+header h1{
+font-size:1.5rem;
+}
+
+section{
+padding:1rem;
+}
+
+button,
+.btn{
+width:100%;
+text-align:center;
+}
+
+.card img{
+height:180px;
+}
+
+}
