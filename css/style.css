@@ -254,3 +254,51 @@ height:180px;
 }
 
 }
+/* MOBILE RESPONSIVE DESIGN */
+@media (max-width: 768px) 
+{
+
+    body {
+        padding: 10px;
+    }
+
+    header {
+        padding: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    button,
+    .btn {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+}
