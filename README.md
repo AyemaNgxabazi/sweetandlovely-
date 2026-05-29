@@ -8,9 +8,11 @@ Website created for Sweet and Lovely Pizza.
 
 # Part 2 – CSS Styling and Responsive Design
 
-For Part 2, the Sweet and Lovely Pizza website was improved through the implementation of CSS styling and responsive web design principles.
+For Part 2, the Sweet and Lovely Pizza website was improved through the implementation of CSS styling and responsive web design principles. Further updates in Part 3 refined the layout, content, and styling across all pages.
 
 ## Changelog
+
+### Part 2 – Initial CSS and Responsive Design
 
 * Created external stylesheet named `style.css`
 * Linked all pages to external CSS
@@ -22,79 +24,143 @@ For Part 2, the Sweet and Lovely Pizza website was improved through the implemen
 * Added hover effects and spacing improvements
 * Improved responsiveness across desktop, tablet, and mobile devices
 
+### Part 3 – Layout, Styling and Content Updates
+
+#### Home Page (`index.html`)
+
+* Added product images to Popular Orders cards (Khayelitsha Pizza, Meat Lovers Pizza, 1KG Ribs & Chips)
+* Updated Popular Orders buttons to **Order Now** and linked them to `menu.html`
+* Styled Welcome and Popular Orders sections with red containers and Customer Safety with a light yellow container
+* Removed box shadows and coloured side borders from home page containers
+* Centred Welcome text, Popular Orders heading, and Customer Safety content
+* Moved the header into the Welcome hero section with the pizza banner as the background
+* Placed the business name on the left and navigation links on the right, with green hover effects
+* Added a CSS-only collapsible navigation menu for mobile and tablet screen sizes (no JavaScript)
+* Styled Popular Orders card titles in black and descriptions in red
+
+#### About Page (`about.html`)
+
+* Applied the shared page hero layout with banner background and responsive navigation
+* Added a white card container inside the **Who We Are** section
+* Fixed the compressed **Who We Are** image sizing
+* Styled **What We Offer** cards with black headings, red descriptions, and centred text and buttons
+* Reformatted **Customer Safety** and **Why Choose Us** as centred sentences without bullet points
+* Updated **Visit or Order** with green **Contact Us** and **Order Now** buttons
+* Removed bold styling from the business name in the welcome text
+
+#### Menu Page (`menu.html`)
+
+* Applied the shared page hero layout across the site
+* Matched menu card text styling to **What We Offer** (black headings, red descriptions, centred content)
+* Changed the **View Extras** button to green
+
+#### Extras Page (`extras.html`)
+
+* Applied the shared page hero layout
+* Matched **Popular Packages** card text styling to the menu and about page cards
+* Changed the **Order Now** button in **Extras & Combo Meals** to link to `menu.html`
+* Reformatted **Extra Pizza Toppings** using the same styled card layout as Opening Hours on the contact page
+
+#### Contact Page (`contact.html`)
+
+* Applied the shared page hero layout
+* Reorganised **Opening Hours** and **Our Details** into styled white card containers
+* Changed the **Call Us** button to green
+* Matched **Pickup and Safety Information** to the **Customer Safety** layout on the about page
+* Updated the **Send Message** button to match standard button sizing
+
+#### Checkout Page (`checkout.html`)
+
+* Applied the shared page hero layout
+* Matched **Ordering Safety Tips** to the **Customer Safety** layout on the about page
+* Added a white payment method container with black text for Cash and Card options
+* Styled **Place Order** and **Back To Menu** buttons to match the red and green button styles used elsewhere
+
+#### Footer (All Pages)
+
+* Added social media links (WhatsApp, Facebook, Instagram, Email, and Location)
+* Added Visa and Mastercard payment icons
+
+#### CSS and Assets
+
+* Added shared classes including `site-page`, `page-hero`, `styled-cards`, `about-story`, and `payment-card`
+* Added `visa.svg` and `mastercard.svg` payment icons in the `images/` folder
+* Removed side borders from safety box containers
+* Implemented mobile navigation using a checkbox and label toggle (CSS only)
+
 ---
 
 # Responsive Testing Evidence
 
+The website was tested using browser developer tools at common desktop, tablet, and mobile viewport sizes. Screenshots were captured to show how the layout, navigation, cards, and footer adapt across screen sizes.
+
 ## Desktop View
 
-### Home Page
+**Test viewport:** 1920 x 1080 (Samsung S33GF 24" simulation)
 
-![Home Desktop](Screenshots/home-desktop.png)
+### Desktop Responsiveness 1
 
-### Menu Page
+**Screenshot size:** 2913 x 1772 px
 
-![Menu Desktop](Screenshots/menu-desktop.png)
+Home page layout showing the hero section with horizontal navigation, Welcome content, Popular Orders cards in a three-column grid, and the Customer Safety section.
 
-### Extras Page
+![Desktop Responsiveness 1](images/desktop-responsiveness-1.png)
 
-![Extras Desktop](Screenshots/extras-desktop.png)
+### Desktop Responsiveness 2
 
-### Contact Page
+**Screenshot size:** 2917 x 1776 px
 
-![Contact Desktop](Screenshots/Contact-Desktop.png)
+Contact page layout showing the Send Us a Message form, stacked input fields, Send Message button, and footer with social links and payment icons.
+
+![Desktop Responsiveness 2](images/desktop-responsiveness-2.png)
 
 ---
 
 ## Tablet View
 
-### Home Page
+**Test viewport:** 820 x 1180 (iPad Air simulation)
 
-![Home iPad](Screenshots/Home-ipad.jpg)
+### Tablet Responsiveness 1
 
-### Menu Page
+**Screenshot size:** 1445 x 1972 px
 
-![Menu iPad](Screenshots/Menu-ipad.jpg)
+Menu page top section showing the hero banner, Our Pizza Collection intro, green View Extras button, and two pizza cards displayed side by side.
 
-### Extras Page
+![Tablet Responsiveness 1](images/tablet-responsiveness-1.png)
 
-![Extras iPad](Screenshots/Extra-ipad.jpg)
+### Tablet Responsiveness 2
 
-### Contact Page
+**Screenshot size:** 1455 x 1966 px
 
-![Contact iPad](Screenshots/Contact-ipad.jpg)
+Menu page lower section showing pizza cards in a two-column layout, the Ordering Tip safety box, and the site footer.
 
-### Responsive iPad Layout
-
-![Responsive iPad](Screenshots/responsive-ipad.png)
+![Tablet Responsiveness 2](images/tablet-responsiveness-2.png)
 
 ---
 
 ## Mobile View
 
-### Home Page
+**Test viewport:** 430 x 932 (iPhone 14 Pro Max simulation)
 
-![Home iPhone](Screenshots/home-iphone.jpg)
+### Mobile Responsiveness 1
 
-### Menu Page
+**Screenshot size:** 1501 x 1968 px
 
-![Menu iPhone](Screenshots/Menu-iphone.jpg)
+Menu page on mobile showing the collapsible hamburger navigation, stacked Our Pizza Collection section, and a single pizza card filling the screen width.
 
-### Extras Page
+![Mobile Responsiveness 1](images/mobile-responsiveness-1.png)
 
-![Extras iPhone](Screenshots/extras-iphone.jpg)
+### Mobile Responsiveness 2
 
-### Contact Page
+**Screenshot size:** 1526 x 1975 px
 
-![Contact iPhone](Screenshots/Contact- iphone.jpg)
+Menu page lower section on mobile showing a stacked pizza card, Ordering Tip section, and footer links with Visa and Mastercard icons.
 
-### Responsive iPhone Layout
-
-![Responsive iPhone](Screenshots/responsive-iphone.png)
+![Mobile Responsiveness 2](images/mobile-responsiveness-2.png)
 
 ---
 
-# 🍕 Sweet & Lovely Pizza Website
+# Sweet & Lovely Pizza Website
 
 ## Student Information
 
@@ -135,22 +201,28 @@ This project is a multi-page website created for Sweet & Lovely Pizza. The websi
 ## Project Structure
 
 ```text
-sweet-and-lovely-pizza/
-│
-├── index.html
-├── about.html
-├── menu.html
-├── extras.html
-├── checkout.html
-├── contact.html
-├── README.md
-│
-├── css/
-│   └── style.css
+SWEETANDLOVELYPIZZA 2 (1)/
 │
 ├── images/
+│   ├── desktop-responsiveness-1.png
+│   ├── desktop-responsiveness-2.png
+│   ├── tablet-responsiveness-1.png
+│   ├── tablet-responsiveness-2.png
+│   ├── mobile-responsiveness-1.png
+│   ├── mobile-responsiveness-2.png
+│   ├── pizza-tikka.png
+│   └── pizza-vegetarian.png
 │
-└── Screenshots/
+├── about.html
+├── checkout.html
+├── contact.html
+├── extras.html
+├── index.html
+├── menu.html
+├── README.md
+│
+└── css/
+    └── style.css
 ```
 
 ---

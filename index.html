@@ -1,27 +1,44 @@
 <!DOCTYPE html>
+<!-- Home page: introduces the business and highlights popular menu items -->
 <html lang="en">
 
 <head>
-
+<!-- Document head: character set, viewport, title, and stylesheet -->
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-
 <title>Sweet and Lovely Pizza</title>
-
 <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
 
-<header>
+<!-- Main page content -->
+<main class="site-page">
+
+<!-- Page hero: banner background, navigation, and welcome message -->
+<section class="page-hero">
+
+<!-- Site header with business name and navigation -->
+<div class="page-header-bar">
+
+<div class="page-brand-row">
 
 <h1>Sweet and Lovely Pizza</h1>
 
-<p>Affordable wood-fired pizza with local flavours</p>
+<!-- Hamburger menu button for mobile and tablet screens -->
+<label for="nav-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
+<span></span>
+<span></span>
+<span></span>
+</label>
 
-<nav>
+</div>
+
+<!-- Hidden checkbox used to open and close the mobile menu with CSS -->
+<input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+<!-- Primary site navigation links -->
+<nav class="site-nav">
 
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
@@ -32,6 +49,17 @@
 
 </nav>
 
+</div>
+
+<!-- Welcome message and main call-to-action buttons -->
+<div class="page-intro section-center">
+
+<h2>Welcome</h2>
+
+<p>
+Affordable wood-fired pizza with local flavour from Khayelitsha.
+</p>
+
 <a href="menu.html" class="btn">
 View Menu
 </a>
@@ -40,22 +68,12 @@ View Menu
 Order Now
 </a>
 
-</header>
-
-<main>
-
-<section>
-
-<h2>Welcome</h2>
-
-<p>
-Affordable wood-fired pizza with local flavour from Khayelitsha.
-</p>
+</div>
 
 </section>
 
-
-<section>
+<!-- Popular Orders section: featured products in card layout -->
+<section class="section-red popular-section">
 
 <h2>Popular Orders</h2>
 
@@ -63,16 +81,18 @@ Affordable wood-fired pizza with local flavour from Khayelitsha.
 
 <div class="card">
 
+<img src="images/pizza-khayelitsha.png" alt="Khayelitsha Pizza">
+
 <h3>Khayelitsha Pizza</h3>
 
-<p>
+<p class="about-story">
 Township inspired flavour.
 </p>
 
-<a href="checkout.html"
+<a href="menu.html"
 class="btn">
 
-Order
+Order Now
 
 </a>
 
@@ -80,17 +100,19 @@ Order
 
 
 <div class="card">
+
+<img src="images/pizza-meatlovers pizza.png" alt="Meat Lovers Pizza">
 
 <h3>Meat Lovers Pizza</h3>
 
-<p>
+<p class="about-story">
 Loaded with meat and cheese.
 </p>
 
-<a href="checkout.html"
+<a href="menu.html"
 class="btn">
 
-Order
+Order Now
 
 </a>
 
@@ -99,16 +121,18 @@ Order
 
 <div class="card">
 
+<img src="images/pizza-extra.png" alt="1KG Ribs and chips">
+
 <h3>1KG Ribs & Chips</h3>
 
-<p>
+<p class="about-story">
 Perfect family meal.
 </p>
 
-<a href="checkout.html"
+<a href="menu.html"
 class="btn">
 
-Order
+Order Now
 
 </a>
 
@@ -118,8 +142,8 @@ Order
 
 </section>
 
-
-<section class="safety-box">
+<!-- Customer safety information -->
+<section class="safety-box section-center">
 
 <h2>Customer Safety</h2>
 
@@ -131,14 +155,31 @@ Verified numbers, safe pickup guidance and emergency information.
 
 </main>
 
-
+<!-- Site footer: social links, payment methods, and copyright -->
 <footer>
 
-<p>
+<!-- Social media and contact links -->
+<div class="footer-social">
 
-©2026 Sweet and Lovely Pizza
+<a href="https://wa.me/27717939711" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+<a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+<a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a href="mailto:sweetandlovely11@gmail.com">Email</a>
+<a href="https://maps.google.com/?q=Makhabeni+Road+Khayelitsha+Cape+Town+7784" target="_blank" rel="noopener noreferrer">Location</a>
 
-</p>
+</div>
+
+<!-- Accepted payment methods -->
+<div class="footer-payments">
+
+<span class="payment-label">We accept:</span>
+
+<img src="images/visa.svg" alt="Visa">
+<img src="images/mastercard.svg" alt="Mastercard">
+
+</div>
+
+<p>&copy; 2026 Sweet and Lovely Pizza. All rights reserved.</p>
 
 </footer>
 

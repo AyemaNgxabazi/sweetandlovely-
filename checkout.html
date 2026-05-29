@@ -1,27 +1,40 @@
 <!DOCTYPE html>
+<!-- Checkout page: order form, payment options, and ordering safety tips -->
 <html lang="en">
 
 <head>
+<!-- Document head: meta tags, page description, title, and stylesheet -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <meta name="description" content="Place your Sweet and Lovely Pizza order online">
-
 <title>Checkout - Sweet and Lovely Pizza</title>
-
 <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
 
-<header>
+<main class="site-page">
+
+<!-- Page hero: banner background, navigation, and checkout introduction -->
+<section class="page-hero">
+
+<div class="page-header-bar">
+
+<div class="page-brand-row">
 
 <h1>Sweet and Lovely Pizza</h1>
 
-<p>Fast, simple and safe ordering</p>
+<label for="nav-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
+<span></span>
+<span></span>
+<span></span>
+</label>
 
-<nav>
+</div>
+
+<input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+<nav class="site-nav">
 
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
@@ -32,12 +45,20 @@
 
 </nav>
 
-</header>
+</div>
 
+<div class="page-intro section-center">
 
-<main>
+<h2>Checkout</h2>
 
-<section>
+<p>Fast, simple and safe ordering</p>
+
+</div>
+
+</section>
+
+<!-- Order summary and support contact details -->
+<section class="section-red section-center">
 
 <h2>Your Order</h2>
 
@@ -53,29 +74,20 @@ Call:
 
 </section>
 
-
-
-<section class="safety-box">
+<!-- Safe ordering guidelines -->
+<section class="safety-box section-center">
 
 <h2>Ordering Safety Tips</h2>
 
-<ul>
-
-<li>Use our verified WhatsApp number</li>
-
-<li>Collect in well-lit pickup areas</li>
-
-<li>Confirm delivery information</li>
-
-<li>Call for large or late orders</li>
-
-</ul>
+<p>Use our verified WhatsApp number.</p>
+<p>Collect in well-lit pickup areas.</p>
+<p>Confirm delivery information.</p>
+<p>Call for large or late orders.</p>
 
 </section>
 
-
-
-<section>
+<!-- Customer order form -->
+<section class="section-red">
 
 <h2>Order Details</h2>
 
@@ -91,8 +103,6 @@ id="fullname"
 name="fullname"
 required>
 
-
-
 <label for="phone">
 Phone Number
 </label>
@@ -103,8 +113,6 @@ id="phone"
 name="phone"
 required>
 
-
-
 <label for="address">
 Delivery Address or Pickup
 </label>
@@ -114,8 +122,6 @@ type="text"
 id="address"
 name="address"
 required>
-
-
 
 <label for="notes">
 Order Notes
@@ -128,46 +134,31 @@ rows="4"
 placeholder="Pizza names, drinks, extras..."
 ></textarea>
 
+<!-- Payment method selection in a white card container -->
+<div class="card payment-card">
 
-<label>
+<p class="payment-heading">Payment Method</p>
 
-Payment Method
-
+<label class="payment-option">
+<input type="radio" name="payment" value="cash" required>
+Cash
 </label>
 
-
-<input
-type="radio"
-name="payment"
-required>
-
-Cash
-
-
-<input
-type="radio"
-name="payment">
-
+<label class="payment-option">
+<input type="radio" name="payment" value="card">
 Card
+</label>
 
+</div>
 
+<!-- Form action buttons -->
+<div class="form-actions section-center">
 
-<br><br>
+<button type="submit" class="btn btn-green">Place Order</button>
 
-<button
-type="submit">
+<a href="menu.html" class="btn btn-green">Back To Menu</a>
 
-Place Order
-
-</button>
-
-<a href="menu.html"
-class="btn btn-green">
-
-Back To Menu
-
-</a>
-
+</div>
 
 </form>
 
@@ -175,19 +166,30 @@ Back To Menu
 
 </main>
 
-
 <footer>
 
-<p>
-©2026 Sweet and Lovely Pizza
-</p>
+<div class="footer-social">
 
-<p>
-WhatsApp | Facebook | Email | Location
-</p>
+<a href="https://wa.me/27717939711" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+<a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+<a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a href="mailto:sweetandlovely11@gmail.com">Email</a>
+<a href="https://maps.google.com/?q=Makhabeni+Road+Khayelitsha+Cape+Town+7784" target="_blank" rel="noopener noreferrer">Location</a>
+
+</div>
+
+<div class="footer-payments">
+
+<span class="payment-label">We accept:</span>
+
+<img src="images/visa.svg" alt="Visa">
+<img src="images/mastercard.svg" alt="Mastercard">
+
+</div>
+
+<p>&copy; 2026 Sweet and Lovely Pizza. All rights reserved.</p>
 
 </footer>
 
 </body>
-
 </html>
